@@ -20,5 +20,17 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ]
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.5.5"
     }
 }
