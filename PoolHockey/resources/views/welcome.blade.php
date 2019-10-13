@@ -7,7 +7,9 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <div id="root"></div>
+        <div id="root">
+        <!-- React sisnere ici -->
+        </div>
     </body>
     <script type="text/javascript" src="js/app.js"></script>
 </html>

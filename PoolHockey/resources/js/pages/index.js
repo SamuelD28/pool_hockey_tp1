@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CompteurPersonne from './comptePersonne';
 
 export default class Index extends Component {
 
@@ -12,7 +13,7 @@ export default class Index extends Component {
         this.ws.onmessage = evt => {
             // listen to data sent from the websocket server
             const message = JSON.parse(evt.data)
-            this.setState({dataFromServer: message})
+            this.setState({ dataFromServer: message })
             console.log(message)
         }
 
@@ -24,11 +25,13 @@ export default class Index extends Component {
     render() {
         return (
             <div className="container">
+                <CompteurPersonne
+                    name="pizza Large"
+                />
                 <div className="row justify-content-center">
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Example Component</div>
-
                             <div className="card-body">I'm an example component!</div>
                         </div>
                     </div>
